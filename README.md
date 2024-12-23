@@ -1,5 +1,7 @@
 # hass-bar-card - Custom Bar Card for Home Assistant 🎨
 
+![Bar Card](custom-bar-card.png)
+
 This custom version of the **Bar Card** for Home Assistant allows you to display a simple percentage bar that is quick and easy to integrate into your Lovelace cards. It blends seamlessly with the "Tile" look & feel of the latest Home Assistant versions. This card is based on custom CSS and leverages existing code to fine-tune the appearance.
 
 ## 🚀 Features
