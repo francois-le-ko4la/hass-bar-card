@@ -1,0 +1,61 @@
+type: custom:bar-card
+entities:
+  - entity: sensor.eversweet_solo_2_filter
+    name: Filtration
+    color: rgb(68, 115, 158)
+    height: 25px
+    positions:
+      indicator: "off"
+card_mod:
+  style: >
+    .card-content {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    bar-card-currentbar, bar-card-backgroundbar {
+      border-radius: 15px;
+    }
+
+    #states > bar-card-row > bar-card-card > bar-card-indicator {
+      width: 10px;
+    }
+
+    #states > bar-card-row > bar-card-card > bar-card-background {
+      position: relative;
+      height: 25px;
+      top: 50%;
+      left: -5px;
+      transform: translateY(-50%);
+    }
+
+    #states > bar-card-row > bar-card-card > bar-card-background >
+    bar-card-contentbar > bar-card-name {
+      font-size: 16px;
+    }
+
+    bar-card-row {
+      padding: 0px;
+    }
+
+    #states {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+
+    bar-card-row ha-icon::before {
+      content: ''; /* Necessary to add a "bubble" */
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 90%; /* Adjust the fill size */
+      height: 90%;
+      background-color: var(--state-icon-color); /* Background color and transparency */
+      opacity: 0.2;
+      border-radius: 50%; /* Keep round */
+      z-index: -1; /* Place behind the icon */
+    }
