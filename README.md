@@ -20,7 +20,7 @@ Before you can use this card, make sure you have the following integrations inst
 2. **Card Mod**  
    Install the `card_mod` through [HACS](https://hacs.xyz/) or [manually](https://github.com/thomasloven/lovelace-card-mod).
 
-## 📝 Usage Example
+## 📝 Usage
 
 Here’s our example of how to use the Custom Bar Card with custom styles. This configuration creates a progress bar with a customized style, a filter icon, and a custom name.
 
