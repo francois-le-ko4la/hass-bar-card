@@ -46,10 +46,12 @@ card_mod:
     }
 
     #states > bar-card-row > bar-card-card > bar-card-indicator {
-      width: 10px;
+      width:10px;
     }
 
+
     #states > bar-card-row > bar-card-card > bar-card-background {
+      // background-color:red;
       position: relative;
       height: 25px;
       top: 50%;
@@ -71,20 +73,24 @@ card_mod:
       padding-right: 7px;
     }
 
+    bar-card-row ha-icon {
+      color: var(--state-icon-color);
+    }
+
     bar-card-row ha-icon::before {
-      content: ''; /* Necessary to add a "bubble" */
+      content: ''; /* Nécessaire pour ajouter une "bulle" */
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       margin: auto;
-      width: 90%; /* Adjust the fill size */
+      width: 90%; /* Ajuste la taille du remplissage */
       height: 90%;
-      background-color: var(--state-icon-color); /* Background color and transparency */
+      background-color: var(--state-icon-color); /* Couleur et transparence du fond */
       opacity: 0.2;
-      border-radius: 50%; /* Keep round */
-      z-index: -1; /* Place behind the icon */
+      border-radius: 50%; /* Garder rond */
+      z-index: -1; /* Place derrière l'icône */
     }
 ```
 
@@ -95,6 +101,7 @@ You can customize the color of the progress bar and keep the same look&fell usin
 - `name`: The name displayed on the bar (optional).
 - `color`: The color of the progress bar (optional, CSS format, e.g., green, rgb(68, 115, 158), #FF5733).
 - `icon`: The icon associated with the entity (optional).
+- Icon color and the circular background color are customizable via CSS variables (var(--state-icon-color) by default).
 
 ## 🖌️ CSS Functionality
 
