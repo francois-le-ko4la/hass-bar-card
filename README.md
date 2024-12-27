@@ -1,6 +1,6 @@
 # DEPRECATED
 
-Better version here: https://github.com/francois-le-ko4la/hass-entity-progress-card
+Better version here: https://github.com/francois-le-ko4la/lovelace-entity-progress-card
 
 # hass-bar-card - Custom Bar Card for Home Assistant 🎨
 
