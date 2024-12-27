@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Better version here: https://github.com/francois-le-ko4la/hass-entity-progress-card
+
 # hass-bar-card - Custom Bar Card for Home Assistant 🎨
 
 ![Bar Card](custom-bar-card.png)
